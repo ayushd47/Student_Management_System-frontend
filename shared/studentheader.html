@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Student Management System</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Course </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/student/gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item hide no-login-menu">
+          <a class="nav-link" href="/student/register.html">Register</a>
+        </li>
+        <li class="nav-item hide loggedinmenu">
+          <a class="nav-link" href="/student/assignment.html">Assignment</a>
+        </li>
+        <li class="nav-item hide loggedinmenu">
+          <a class="nav-link" href="/student/event.html">Event</a>
+        </li>
+        <li class="nav-item hide loggedinmenu">
+          <a class="nav-link" href="/student/notice.html">Notice</a>
+        </li>
+        <li class="nav-item hide no-login-menu">
+          <a class="nav-link" href="/student/login.html">Login</a>
+        </li>
+        <li class="nav-item hide loggedinmenu">
+          <a class="nav-link" onclick="page.logout()" href="javascript:void(0)"
+            >Logout</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

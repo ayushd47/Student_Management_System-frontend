@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <title>Student Management System</title>
+    <!-- css section -->
+    <link href="/css/nprogress.css" rel="stylesheet" />
+    <link href="/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/site.css" rel="stylesheet" />
+    <!-- css section -->
+    <!-- script section -->
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/axios.min.js"></script>
+    <script type="text/javascript" src="/js/nprogress.js"></script>
+    <script type="text/javascript" src="/js/jquery.toaster.js"></script>
+    <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+    <!-- script section -->
+  </head>
+
+  <body>
+    <div id="studentheader"></div>
+    <div class="container mt-100">
+      <!--content -->
+      <div class="row">
+        <div class="offset-md-4 col-md-4">
+          <form
+            id="entryForm"
+            onsubmit="return page.submitform(event,this);"
+            novalidate
+            autocomplete="off"
+          >
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Login</h4>
+                <div class="input-group mb-3 mt-25">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input
+                    name="Username"
+                    class="form-control"
+                    type="email"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                  <input
+                    name="Password"
+                    class="form-control"
+                    type="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="card-footer text-right">
+                <button class="btn btn-info" type="Submit">
+                  <i class="fa fa-sign-in-alt"></i> Login
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--content -->
+    </div>
+    <div id="studentfooter"></div>
+
+    <!-- script section -->
+    <script src="/js/student/base.js"></script>
+    <script src="/js/student/login.js"></script>
+    <!-- script section -->
+  </body>
+</html>

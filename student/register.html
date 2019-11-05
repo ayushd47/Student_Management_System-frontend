@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Management System</title>
+    <!-- css section -->
+    <link href="/css/nprogress.css" rel="stylesheet" />
+    <link href="/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/site.css" rel="stylesheet" />
+    <!-- css section -->
+    <!-- script section -->
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/axios.min.js"></script>
+    <script type="text/javascript" src="/js/nprogress.js"></script>
+    <script type="text/javascript" src="/js/jquery.toaster.js"></script>
+    <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+    <!-- script section -->
+  </head>
+
+  <body>
+    <div id="studentheader"></div>
+    <div class="container mt-100">
+      <!--content -->
+      <div class="row">
+        <div class="offset-md-4 col-md-4">
+          <form
+            id="entryForm"
+            onsubmit="return page.submitform(event,this);"
+            novalidate
+            autocomplete="off"
+          >
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Register</h4>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label
+                        >User Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        autocomplete="off"
+                        id="UserName"
+                        required
+                        type="email"
+                        class="form-control"
+                        name="UserName"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label
+                        >Full Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        autocomplete="off"
+                        id="FullName"
+                        required
+                        type="text"
+                        class="form-control"
+                        name="FullName"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Password <span class="text-danger">*</span></label>
+                      <input
+                        type="password"
+                        id="Password"
+                        required
+                        name="Password"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label
+                        >Confirm Password
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        required
+                        type="password"
+                        class="form-control"
+                        id="ConfirmPassword"
+                        name="ConfirmPassword"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                <button type="submit" class="btn btn-info">
+                  <i class="fa fa-user-plus"></i> Register
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--content -->
+    </div>
+    <div id="studentfooter"></div>
+    <!-- script section -->
+    <script src="/js/student/base.js"></script>
+    <script src="/js/student/register.js"></script>
+    <!-- script section -->
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.error{color:red;width: 100%;}
+.hide{display:none;}
+form.user .form-control-user{border-radius:0;padding: 1rem 1rem;font-size: 1rem;}
+form.user .btn-user{border-radius: 0;}
+.nav-dropdown-items{list-style: none;margin:0;}
+.nav-dropdown-items .nav-item:last-child{margin:0;}
+.nav-dropdown-items .nav-item .nav-link{padding:5px 0;}
+.icon .fa,.icon .fas{line-height: 24px;}
